@@ -11,7 +11,6 @@ module.exports = {
             res.setEncoding('utf8');
             res.on('data', (chunk) => {
                 console.log(`BODY: ${chunk}`);
-                //Write response to a json file
                 fs.appendFile(fileName, chunk, 'utf8', (err) => {
                     if (err) throw err;
                     console.log('The "data to append" was appended to the target file!');
@@ -25,7 +24,6 @@ module.exports = {
         req.on('error', (e) => {
             console.error('problem with request: ' + JSON.stringify(e));
         });
-        //console.log(JSON.stringify(postData));
         console.log(JSON.stringify(postData));
         // write data to request body
         req.write(JSON.stringify(postData));
