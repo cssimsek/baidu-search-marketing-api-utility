@@ -7,7 +7,10 @@ const requestBody = {
     'campaignFields' : ['campaignId', 'campaignName', 'budget', 'campaignType', 'status']
 };
 
-//Instantiate Service specific request object
+/* 
+Instantiate Service specific request object
+See Baidu API document for other Service Definitions
+*/
 const requestObjInstance = new RequestObject(requestBody,'CampaignService','getCampaign');
 
 /* 
