@@ -12,7 +12,6 @@ module.exports = class BaiduRequest {
             'password': credentials.password,
             'token': credentials.token
         };
-        this.options = {};
         this.options = {
             'method': 'POST',
             'hostname': 'api.baidu.com',
