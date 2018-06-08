@@ -1,7 +1,7 @@
 # Utility to retrieve data from the Baidu Search Marketing API
 Initial implementation to fetch a list of campaigns for a particular account
 
-# See example usage in baidu-fetch-implementation.js
+# See example usage in [baidu-fetch-implementation.js](baidu-fetch-implementation.js)
 This implementation contains an example that fetches the complete list of campaigns for a particular account.
 
 To fetch data on a particular campaign declare the campaign id in the `requestBody.campaignIds` Array.
