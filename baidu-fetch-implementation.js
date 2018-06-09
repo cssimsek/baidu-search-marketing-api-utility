@@ -1,5 +1,5 @@
 const RequestObject = require('./baidu-request-class.js');
-const httpMethod = require('./baidu-http-post.js');
+const HttpMethod = require('./baidu-http-post.js');
 
 //Define requestBody
 const requestBody = {
@@ -17,5 +17,5 @@ const requestObjInstance = new RequestObject(requestBody,'CampaignService','getC
 Make http POST request with request object values
 The third argument defines the output file to which the response will be written
 */
-httpMethod.doHttpPost(requestObjInstance.options,requestObjInstance.postData,'baidu_campaign_info.json');
+HttpMethod.doHttpPost(requestObjInstance.options,requestObjInstance.postData,'baidu_campaign_info.json');
 
